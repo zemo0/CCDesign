@@ -211,6 +211,10 @@ section {
    margin: 18px auto;
 }
 
+.milestone .col{
+   margin-bottom: 50px;
+}
+
 .counter .h1 {
    color: var(--brand);
 }
@@ -221,7 +225,7 @@ section {
    line-height: 1;
 }
 
-.counter .divider {
+.col .divider {
    width: 100px;
    height: 2px;
    background-color: var(--brand);
