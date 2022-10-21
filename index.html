@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hr">
 
 <head>
     <!-- Required meta tags -->
@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="css/et-line-icons.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>CCDizajn - Izrada web stranica</title>
+    <title>CCDizajn - Agencija za Web Dizajn</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="75">
+<body data-bs-target="#navbar">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
         <div class="container">
             <a class="navbar-brand logo-text" href="#" style="font-size: 48px;">CCDizajn</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" id="baton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,7 +49,7 @@
     </nav>
 
     <!-- HERO -->
-    <section id="home" class="hero" data-jarallax data-speed="0.2" class="jarallax">
+    <section id="home" class="hero" data-jarallax data-speed="0.2">
         <div class="container">
             <div class="row">
                 <div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
@@ -98,7 +98,7 @@
     </section>
 
     <!-- MILESTONE -->
-    <section class="milestone" data-jarallax data-speed="0.5" class="jarallax" id="izrada">
+    <section class="milestone" id="izrada">
         <div class="container text-white text-center">
             <div class="row">
                 <div class="col-12 intro text-center" data-aos="fade-up">
@@ -190,7 +190,7 @@
                         <div class="icon"><i class="icon-envelope"></i></div>
                         <div class="text">
                             <h3>Email</h3>
-                            <p>ccdizajn@gmail.com</p>
+                            <p onclick="copy(this)">ccdizajn@gmail.com</p>
                         </div>
                     </div>
                     <div class="box">
@@ -204,7 +204,7 @@
                 <div class="contactForm">
                     <form action="https://formsubmit.co/ccdizajn@gmail.com" method="POST">
                         <h3>Pošaljite nam poruku</h3>
-                        <input type="hidden" name="_next" value="ccdizajn.com">
+                        <input type="hidden" name="_next" value="https://ccdizajn.com">
                         <input type="hidden" name="_captcha" value="false">
                         <div class="inputBox">
                             <input type="text" name="ime" required>
@@ -254,7 +254,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
 
 </body>
 
