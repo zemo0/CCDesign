@@ -72,6 +72,6 @@ function copy(that){
     inp.remove();
 }
 
-
+//animacije
 
 
